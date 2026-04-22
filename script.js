@@ -85,48 +85,55 @@ document.addEventListener('DOMContentLoaded', () => {
   counters.forEach(c => counterObserver.observe(c));
 
   /* ── 5. ENQUIRY FORM HANDLING ── */
-  const form = document.getElementById('enquiryForm');
-  const submitBtn = document.getElementById('submitBtn');
-  const successDiv = document.getElementById('formSuccess');
+  const setupForm = (formId, btnId, successId) => {
+    const formEl = document.getElementById(formId);
+    const submitBtnEl = document.getElementById(btnId);
+    const successDivEl = document.getElementById(successId);
 
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      e.stopPropagation();
+    if (formEl && submitBtnEl && successDivEl) {
+      formEl.addEventListener('submit', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
 
-      if (!form.checkValidity()) {
-        form.classList.add('was-validated');
-        return;
-      }
+        if (!formEl.checkValidity()) {
+          formEl.classList.add('was-validated');
+          return;
+        }
 
-      // Show loading
-      const btnText = submitBtn.querySelector('.btn-text');
-      const btnLoading = submitBtn.querySelector('.btn-loading');
-      btnText.classList.add('d-none');
-      btnLoading.classList.remove('d-none');
-      submitBtn.disabled = true;
+        // Show loading
+        const btnText = submitBtnEl.querySelector('.btn-text');
+        const btnLoading = submitBtnEl.querySelector('.btn-loading');
+        if (btnText) btnText.classList.add('d-none');
+        if (btnLoading) btnLoading.classList.remove('d-none');
+        submitBtnEl.disabled = true;
 
-      // Simulate API call
-      setTimeout(() => {
-        form.classList.add('d-none');
-        successDiv.classList.remove('d-none');
-      }, 1800);
-    });
-  }
+        // Simulate API call
+        setTimeout(() => {
+          formEl.classList.add('d-none');
+          successDivEl.classList.remove('d-none');
+        }, 1800);
+      });
+    }
+    return { formEl, submitBtnEl, successDivEl };
+  };
+
+  const modalFormEls = setupForm('enquiryForm', 'submitBtn', 'formSuccess');
+  setupForm('heroEnquiryForm', 'heroSubmitBtn', 'heroFormSuccess');
 
   /* ── 6. MODAL RESET on close ── */
   const enquireModal = document.getElementById('enquireModal');
   if (enquireModal) {
     enquireModal.addEventListener('hidden.bs.modal', () => {
-      if (form) {
-        form.classList.remove('d-none', 'was-validated');
-        form.reset();
-        successDiv.classList.add('d-none');
-        const btnText = submitBtn.querySelector('.btn-text');
-        const btnLoading = submitBtn.querySelector('.btn-loading');
-        btnText.classList.remove('d-none');
-        btnLoading.classList.add('d-none');
-        submitBtn.disabled = false;
+      const { formEl, submitBtnEl, successDivEl } = modalFormEls;
+      if (formEl) {
+        formEl.classList.remove('d-none', 'was-validated');
+        formEl.reset();
+        successDivEl.classList.add('d-none');
+        const btnText = submitBtnEl.querySelector('.btn-text');
+        const btnLoading = submitBtnEl.querySelector('.btn-loading');
+        if (btnText) btnText.classList.remove('d-none');
+        if (btnLoading) btnLoading.classList.add('d-none');
+        submitBtnEl.disabled = false;
       }
     });
   }

@@ -85,13 +85,55 @@
             RERA Reg. No: P99000045490 · P99000045499 · P99000045599
           </div>
         </div>
-        <div class="col-lg-5 d-none d-lg-flex justify-content-end" data-aos="fade-left" data-aos-duration="1000">
-          <div class="hero-card">
-            <div class="hero-card-img">
-              <img src="assets/Family-on-the-beach.webp" alt="Luxury Tower" class="img-fluid rounded-4"/>
-            </div>
-            <div class="hero-card-badge">
-              <i class="bi bi-award-fill me-2"></i>Trusted Developer Since 2000
+        <div class="col-lg-5 d-flex justify-content-center justify-content-lg-end mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="1000">
+          <div class="hero-form-panel bg-white p-4 rounded-4 shadow w-100" style="max-width: 400px; position: relative; z-index: 10;">
+            <h4 class="modal-form-title fs-4">Get Exclusive Details</h4>
+            <p class="modal-form-sub mb-4">Our expert will call you within 30 minutes</p>
+            <form id="heroEnquiryForm" novalidate>
+              <div class="mb-3">
+                <label class="form-label">Full Name <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                  <input type="text" class="form-control" id="heroFullName" placeholder="Enter your full name" required/>
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Mobile Number <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                  <input type="tel" class="form-control" id="heroMobile" placeholder="+91 00000 00000" pattern="[0-9]{10}" required/>
+                  <div class="invalid-feedback">Please enter a valid 10-digit mobile number.</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">City <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
+                  <input type="text" class="form-control" id="heroCity" placeholder="Enter your city" required/>
+                  <div class="invalid-feedback">Please enter your city.</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Interested In <span class="text-danger">*</span></label>
+                <select class="form-select" id="heroInterested" required>
+                  <option value="" disabled selected>Select apartment type</option>
+                  <option>3 BHK – 908 sq.ft (₹1.50 Cr*)</option>
+                  <option>3 BHK – 1103 sq.ft (₹1.72 Cr*)</option>
+                  <option>Both — Need Guidance</option>
+                  <option>Investment / Rental</option>
+                </select>
+                <div class="invalid-feedback">Please select an option.</div>
+              </div>
+              <button type="submit" class="btn btn-hero-primary w-100 py-3 mt-2" id="heroSubmitBtn">
+                <span class="btn-text"><i class="bi bi-send-fill me-2"></i>Request Callback Now</span>
+                <span class="btn-loading d-none"><span class="spinner-border spinner-border-sm me-2"></span>Sending...</span>
+              </button>
+            </form>
+            <div id="heroFormSuccess" class="form-success d-none text-center">
+              <div class="success-icon fs-1 text-success mb-3"><i class="bi bi-check-circle-fill"></i></div>
+              <h5 class="text-dark">Thank You! 🎉</h5>
+              <p class="text-muted mb-0">Our expert will contact you within <strong>30 minutes</strong>.</p>
             </div>
           </div>
         </div>
