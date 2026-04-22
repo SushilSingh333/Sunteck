@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunteck Beach Residences | Beachfront Luxury in Mumbai</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ 
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.svg" alt="Sunteck Beach Residences" class="navbar-logo"/>
+        <span class="brand-bottom">BEACH RESIDENCES</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-icon"><span></span><span></span><span></span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apartments">Apartments</a></li>
+          <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#connectivity">Location</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why-invest">Why Invest</a></li>
+          <li class="nav-item ms-lg-3">
+            <button class="btn btn-enquire" data-bs-toggle="modal" data-bs-target="#enquireModal">
+              Enquire Now
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+  <section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1000">
+          <div class="hero-badge mb-3">
+            <i class="bi bi-geo-alt-fill me-2"></i>Suruchi Beach · Vasai West · Mumbai
+          </div>
+          <h1 class="hero-title">
+            Own Mumbai's<br/>
+            <span class="hero-title-italic">Beachfront</span><br/>
+            Luxury
+          </h1>
+          <p class="hero-subtitle">
+            Where the Arabian Sea meets world-class living — starting at just <strong>₹1.50 Cr*</strong>
+          </p>
+          <div class="hero-price-tags d-flex flex-wrap gap-3 mb-4">
+            <div class="price-tag">
+              <span class="price-label">3 BHK · 908 sq.ft</span>
+              <span class="price-value">₹1.50 Cr*</span>
+            </div>
+            <div class="price-tag">
+              <span class="price-label">3 BHK · 1103 sq.ft</span>
+              <span class="price-value">₹1.72 Cr*</span>
+            </div>
+          </div>
+          <div class="hero-ctas d-flex flex-wrap gap-3">
+            <button class="btn btn-hero-primary" data-bs-toggle="modal" data-bs-target="#enquireModal">
+              <i class="bi bi-calendar-check me-2"></i>Book a Site Visit
+            </button>
+            <button class="btn btn-hero-secondary" data-bs-toggle="modal" data-bs-target="#enquireModal">
+              <i class="bi bi-download me-2"></i>Download Brochure
+            </button>
+          </div>
+          <div class="hero-rera mt-4">
+            RERA Reg. No: P99000045490 · P99000045499 · P99000045599
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-flex justify-content-end" data-aos="fade-left" data-aos-duration="1000">
+          <div class="hero-card">
+            <div class="hero-card-img">
+              <img src="assets/Family-on-the-beach.webp" alt="Luxury Tower" class="img-fluid rounded-4"/>
+            </div>
+            <div class="hero-card-badge">
+              <i class="bi bi-award-fill me-2"></i>Trusted Developer Since 2000
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll to Explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+ 
+  <!-- ═══════════════════════════════ STATS BAR ENHANCED ═══════════════════════════════ -->
+  <section class="stats-bar-wrapper">
+    <div class="container">
+      <div class="stats-glass-card" data-aos="fade-up" data-aos-delay="0" data-aos-offset="-50">
+        <div class="row g-0 stats-row">
+          <div class="col-6 col-md-3 stat-item">
+            <div class="stat-icon"><i class="bi bi-map-fill"></i></div>
+            <div class="stat-number-wrapper">
+              <div class="stat-number">50</div>
+              <div class="stat-unit">Acres</div>
+            </div>
+            <div class="stat-label">Premium Township</div>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <div class="stat-icon"><i class="bi bi-building-fill"></i></div>
+            <div class="stat-number-wrapper">
+              <div class="stat-number">1</div>
+              <div class="stat-unit">Lakh sq.ft</div>
+            </div>
+            <div class="stat-label">Grand Clubhouse</div>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <div class="stat-icon"><i class="bi bi-tree-fill"></i></div>
+            <div class="stat-number-wrapper">
+              <div class="stat-number">60</div>
+              <div class="stat-unit">%</div>
+            </div>
+            <div class="stat-label">Open Green Space</div>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <div class="stat-icon"><i class="bi bi-buildings-fill"></i></div>
+            <div class="stat-number-wrapper">
+              <div class="stat-number">G+35</div>
+            </div>
+            <div class="stat-label">Soaring Towers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ OVERVIEW ═══════════════════════════════ -->
+  <section class="overview-section section-pad" id="overview">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="overview-images">
+            <img src="assets/2.jpg" alt="Beachfront View" class="img-main rounded-4"/>
+            <img src="assets/Vihang-Codename-Zero-Mile-City-1.webp" alt="Luxury Apartment" class="img-thumb rounded-4"/>
+            <div class="overview-badge-float">
+              <i class="bi bi-star-fill"></i>
+              <div>
+                <strong>Sunteck Realty</strong><br/>
+                <small>India's Trusted Luxury Brand</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="section-label">THE OPPORTUNITY</div>
+          <h2 class="section-title">Mumbai's Most Coveted<br/><em>Beachfront Address</em></h2>
+          <p class="section-body">
+            Imagine waking up to the gentle sound of waves, with the vast Arabian Sea stretching to the horizon from your living room. At Sunteck Beach Residences, this is not a dream — it is your everyday reality.
+          </p>
+          <p class="section-body">
+            While beachfront homes in Mumbai typically start from <strong>₹8 Crore</strong>, SBR opens the doors of coastal luxury at an unprecedented <strong>₹1.50 Cr*</strong>, spread across a world-class 50-acre township with 60% open space.
+          </p>
+          <div class="row g-3 mt-2">
+            <div class="col-6">
+              <div class="feature-pill"><i class="bi bi-shield-check-fill me-2"></i>RERA Registered</div>
+            </div>
+            <div class="col-6">
+              <div class="feature-pill"><i class="bi bi-bank2 me-2"></i>Bank Loans Available</div>
+            </div>
+            <div class="col-6">
+              <div class="feature-pill"><i class="bi bi-beach me-2"></i>Private Beach Access</div>
+            </div>
+            <div class="col-6">
+              <div class="feature-pill"><i class="bi bi-calendar4-range me-2"></i>Possession: 2027</div>
+            </div>
+          </div>
+          <button class="btn btn-primary-gold mt-4" data-bs-toggle="modal" data-bs-target="#enquireModal">
+            Get Full Details <i class="bi bi-arrow-right ms-2"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ APARTMENTS ═══════════════════════════════ -->
+  <section class="apartments-section section-pad" id="apartments">
+    <div class="hero-bg-apt"></div>
+    <div class="container position-relative">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label">FLOOR PLANS & PRICING</div>
+        <h2 class="section-title text-white">Spacious Sea-View <em>Residences</em></h2>
+        <p class="section-body text-white-70 mx-auto" style="max-width:560px">
+          Crafted with meticulous attention to design, every home at SBR offers panoramic ocean views and intelligent spatial layouts.
+        </p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="0">
+            <div class="apt-card">
+              <div class="apt-card-img">
+                <img src="assets/interor3.webp" alt="3 BHK 908" class="img-fluid"/>
+              <div class="apt-card-badge">Most Popular</div>
+            </div>
+            <div class="apt-card-body">
+              <div class="apt-type">3 BHK Apartment</div>
+              <div class="apt-size">908 sq.ft</div>
+              <div class="apt-price">Starting ₹1.50 Cr<sup>*</sup></div>
+              <div class="apt-features">
+                <span><i class="bi bi-door-open me-1"></i>3 Bedrooms</span>
+                <span><i class="bi bi-droplet me-1"></i>2 Bathrooms</span>
+                <span><i class="bi bi-sun me-1"></i>Sea View</span>
+              </div>
+              <button class="btn btn-apt w-100 mt-3" data-bs-toggle="modal" data-bs-target="#enquireModal">
+                Get Floor Plan & Price
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="150">
+            <div class="apt-card">
+              <div class="apt-card-img">
+                <img src="assets/995629a99081ead3ef5ed2bac0bf4807.jpeg" alt="3 BHK 1103" class="img-fluid"/>
+              <div class="apt-card-badge premium">Premium</div>
+            </div>
+            <div class="apt-card-body">
+              <div class="apt-type">3 BHK Apartment</div>
+              <div class="apt-size">1103 sq.ft</div>
+              <div class="apt-price">Starting ₹1.72 Cr<sup>*</sup></div>
+              <div class="apt-features">
+                <span><i class="bi bi-door-open me-1"></i>3 Bedrooms</span>
+                <span><i class="bi bi-droplet me-1"></i>2 Bathrooms</span>
+                <span><i class="bi bi-sun me-1"></i>Sea View</span>
+              </div>
+              <button class="btn btn-apt w-100 mt-3" data-bs-toggle="modal" data-bs-target="#enquireModal">
+                Get Floor Plan & Price
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5" data-aos="fade-up">
+        <button class="btn btn-outline-light-gold" data-bs-toggle="modal" data-bs-target="#enquireModal">
+          <i class="bi bi-download me-2"></i>Download Complete Brochure
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ AMENITIES ═══════════════════════════════ -->
+  <section class="amenities-section section-pad" id="amenities">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label">WORLD-CLASS LIFESTYLE</div>
+        <h2 class="section-title">Extraordinary <em>Amenities</em></h2>
+        <p class="section-body mx-auto" style="max-width:540px">
+          Over 1 Lakh sq.ft of curated lifestyle experiences — every day is a vacation.
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+          <div class="amenity-card">
+            <div class="amenity-img">
+              <img src="/assets/amenites/clubhouse.webp" alt="Clubhouse"/>
+            </div>
+            <div class="amenity-icon"><i class="bi bi-building"></i></div>
+            <div class="amenity-name">Grand Clubhouse</div>
+            <div class="amenity-detail">1 Lakh sq.ft</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="60">
+          <div class="amenity-card">
+            <div class="amenity-img">
+              <img src="/assets/amenites/2.jfif" alt="Beach"/>
+            </div>
+            <div class="amenity-icon"><i class="bi bi-beach"></i></div>
+            <div class="amenity-name">Private Beach</div>
+            <div class="amenity-detail">Exclusive Access</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="120">
+          <div class="amenity-card">
+            <div class="amenity-img">
+              <img src="/assets/amenites/3.jfif" alt="Pool"/>
+            </div>
+            <div class="amenity-icon"><i class="bi bi-water"></i></div>
+            <div class="amenity-name">Swimming Pool</div>
+            <div class="amenity-detail">Infinity & Lap Pool</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="180">
+          <div class="amenity-card">
+            <div class="amenity-img">
+              <img src="/assets/amenites/4.jfif" alt="Golf"/>
+            </div>
+            <div class="amenity-icon"><i class="bi bi-flag"></i></div>
+            <div class="amenity-name">Golf Amenities</div>
+            <div class="amenity-detail">Putting Green</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+          <div class="amenity-card">
+            <div class="amenity-img">
+              <img src="/assets/amenites/5.jfif" alt="Gym"/>
+            </div>
+            <div class="amenity-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <div class="amenity-name">Fitness Zones</div>
+            <div class="amenity-detail">State-of-the-Art</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="60">
+          <div class="amenity-card">
+            <div class="amenity-img">
+              <img src="/assets/amenites/featurejogging.jpg" alt="Jogging"/>
+            </div>
+            <div class="amenity-icon"><i class="bi bi-person-walking"></i></div>
+            <div class="amenity-name">Jogging Track</div>
+            <div class="amenity-detail">Scenic Beachside</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="120">
+          <div class="amenity-card">
+            <div class="amenity-img">
+              <img src="/assets/amenites/kids.jpg" alt="Kids"/>
+            </div>
+            <div class="amenity-icon"><i class="bi bi-emoji-smile-fill"></i></div>
+            <div class="amenity-name">Kids Play Area</div>
+            <div class="amenity-detail">Safe & Fun</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="180">
+          <div class="amenity-card">
+            <div class="amenity-img">
+              <img src="/assets/amenites/retail.jfif" alt="Retail"/>
+            </div>
+            <div class="amenity-icon"><i class="bi bi-bag-heart-fill"></i></div>
+            <div class="amenity-name">High-Street Retail</div>
+            <div class="amenity-detail">Sunteck Mall</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONNECTIVITY ═══════════════════════════════ -->
+  <section class="connectivity-section section-pad" id="connectivity">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="section-label">PRIME LOCATION</div>
+          <h2 class="section-title">Seamlessly <em>Connected</em> to Mumbai</h2>
+          <p class="section-body">
+            SBR sits at the perfect intersection of serenity and urban connectivity — offering the peace of beachfront living with the ease of city access.
+          </p>
+          <div class="connect-list">
+            <div class="connect-item" data-aos="fade-right" data-aos-delay="0">
+              <div class="connect-icon"><i class="bi bi-train-freight-front-fill"></i></div>
+              <div>
+                <div class="connect-title">Vasai Railway Station</div>
+                <div class="connect-sub">Just 5 minutes away</div>
+              </div>
+            </div>
+            <div class="connect-item" data-aos="fade-right" data-aos-delay="80">
+              <div class="connect-icon"><i class="bi bi-road"></i></div>
+              <div>
+                <div class="connect-title">NH-48 Highway</div>
+                <div class="connect-sub">Easy expressway access</div>
+              </div>
+            </div>
+            <div class="connect-item" data-aos="fade-right" data-aos-delay="160">
+              <div class="connect-icon"><i class="bi bi-train-front-fill"></i></div>
+              <div>
+                <div class="connect-title">Upcoming Metro Line</div>
+                <div class="connect-sub">Mira Road to Virar — 23 km Purple Line</div>
+              </div>
+            </div>
+            <div class="connect-item" data-aos="fade-right" data-aos-delay="240">
+              <div class="connect-icon"><i class="bi bi-water"></i></div>
+              <div>
+                <div class="connect-title">Coastal Road & Ro-Ro Ferry</div>
+                <div class="connect-sub">Future-ready infrastructure</div>
+              </div>
+            </div>
+            <div class="connect-item" data-aos="fade-right" data-aos-delay="320">
+              <div class="connect-icon"><i class="bi bi-buildings-fill"></i></div>
+              <div>
+                <div class="connect-title">Borivali · Thane · Mumbai</div>
+                <div class="connect-sub">Smooth suburb connectivity</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="location-map-card">
+            <img src="assets/3.jpeg" alt="Mumbai Skyline" class="img-fluid rounded-4 location-img"/>
+            <div class="map-overlay-card">
+              <i class="bi bi-geo-alt-fill text-danger me-2"></i>
+              <div>
+                <strong>Suruchi Beach Road</strong><br/>
+                <small>Vasai West, Mumbai — 401201</small>
+              </div>
+            </div>
+            <button class="btn btn-primary-gold mt-4 w-100" data-bs-toggle="modal" data-bs-target="#enquireModal">
+              <i class="bi bi-map-fill me-2"></i>Get Directions & Site Visit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ WHY INVEST ═══════════════════════════════ -->
+  <section class="invest-section section-pad" id="why-invest">
+    <div class="invest-bg"></div>
+    <div class="container position-relative">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label text-white-50">INVESTMENT ADVANTAGE</div>
+        <h2 class="section-title text-white">Why Invest in <em>SBR?</em></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="invest-card">
+            <div class="invest-number">01</div>
+            <div class="invest-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h5 class="invest-title">Unbeatable Entry Price</h5>
+            <p class="invest-body">Mumbai beachfront homes typically start at ₹8 Cr. Enter here at just ₹1.50 Cr* — an opportunity that may never come again.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="invest-card">
+            <div class="invest-number">02</div>
+            <div class="invest-icon"><i class="bi bi-cash-coin"></i></div>
+            <h5 class="invest-title">High Rental Demand</h5>
+            <p class="invest-body">Beachfront properties command premium rental yields. The unique lifestyle offering ensures consistent demand and strong appreciation potential.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+          <div class="invest-card">
+            <div class="invest-number">03</div>
+            <div class="invest-icon"><i class="bi bi-infrastructure"></i></div>
+            <h5 class="invest-title">Infrastructure Boom</h5>
+            <p class="invest-body">Upcoming Metro, Coastal Road, Ro-Ro Ferry & Mumbai Ring Road will dramatically boost property values in this corridor.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="invest-card">
+            <div class="invest-number">04</div>
+            <div class="invest-icon"><i class="bi bi-award-fill"></i></div>
+            <h5 class="invest-title">Trusted Brand</h5>
+            <p class="invest-body">Sunteck Realty — listed on NSE & BSE, ISO triple-certified, 52.5 million sq.ft portfolio across 32 iconic projects since 2000.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="invest-card">
+            <div class="invest-number">05</div>
+            <div class="invest-icon"><i class="bi bi-tree-fill"></i></div>
+            <h5 class="invest-title">60% Open Green Space</h5>
+            <p class="invest-body">A rare luxury in Mumbai — 60% of the 50-acre township is dedicated to open landscaped greens, ensuring a breathable, serene environment.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+          <div class="invest-card highlight-card">
+            <div class="invest-number">06</div>
+            <div class="invest-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <h5 class="invest-title">Limited Inventory</h5>
+            <p class="invest-body">With most units already sold and possession in 2027, this is a time-sensitive opportunity. Every day of delay costs you a beachfront address.</p>
+            <button class="btn btn-hero-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#enquireModal">
+              Enquire Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ GALLERY ═══════════════════════════════ -->
+  <section class="gallery-section section-pad">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-label">PROJECT GALLERY</div>
+        <h2 class="section-title">Life at <em>Sunteck Beach</em></h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-8" data-aos="zoom-in">
+          <div class="gallery-item tall">
+            <img src="assets/2.jpg" alt="Beachfront View"/>
+            <div class="gallery-overlay"><span>Beachfront Living</span></div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex flex-column gap-3">
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="60">
+            <img src="assets/interor3.webp" alt="Luxury Interior"/>
+            <div class="gallery-overlay"><span>Luxury Interiors</span></div>
+          </div>
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="120">
+            <img src="assets/4.jpg" alt="Pool View"/>
+            <div class="gallery-overlay"><span>Infinity Pool</span></div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="0">
+          <div class="gallery-item">
+            <img src="assets/hero.jfif" alt="Sea Sunrise"/>
+            <div class="gallery-overlay"><span>Morning Sunrise</span></div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="80">
+          <div class="gallery-item">
+            <img src="assets/8.webp" alt="Sea View Bedroom"/>
+            <div class="gallery-overlay"><span>Sea-View Bedroom</span></div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="160">
+          <div class="gallery-item">
+            <img src="assets/6.jpg" alt="Fine Dining"/>
+            <div class="gallery-overlay"><span>Kitchen</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CTA STRIP ═══════════════════════════════ -->
+  <section class="cta-strip">
+    <div class="container">
+      <div class="cta-inner" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-3 mb-lg-0">
+            <div class="cta-label">⏰ LIMITED INVENTORY — ACT NOW</div>
+            <h3 class="cta-title">Book Your Beachfront Home<br/><em>Before It's Gone With The Tide</em></h3>
+          </div>
+          <div class="col-lg-5 text-lg-end d-flex flex-wrap gap-3 justify-content-lg-end">
+            <a href="tel:+918080808667" class="btn btn-cta-call">
+              <i class="bi bi-telephone-fill me-2"></i>Call Now
+            </a>
+            <button class="btn btn-hero-primary" data-bs-toggle="modal" data-bs-target="#enquireModal">
+              <i class="bi bi-envelope-fill me-2"></i>Enquire Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <span class="brand-top">SUNTECK</span>
+            <span class="brand-bottom">BEACH RESIDENCES</span>
+          </div>
+          <p class="footer-text mt-3">India's most iconic beachfront township at Suruchi Beach, Vasai West, Mumbai — where the Arabian Sea is your backyard.</p>
+          <div class="footer-social mt-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#overview">Project Overview</a></li>
+            <li><a href="#apartments">Floor Plans & Pricing</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#connectivity">Location & Connectivity</a></li>
+            <li><a href="#why-invest">Investment Advantage</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="footer-heading">Contact Us</h6>
+          <div class="footer-contact">
+            <p><i class="bi bi-geo-alt-fill me-2"></i>Suruchi Beach Road, Vasai West, Mumbai — 401201</p>
+            <p><i class="bi bi-telephone-fill me-2"></i><a href="tel:+918080808667">+91 80808 08667</a></p>
+            <p><i class="bi bi-envelope-fill me-2"></i><a href="mailto:info@sunteckbeachresidences.com">info@sunteckbeachresidences.com</a></p>
+          </div>
+          <div class="footer-rera mt-3">
+            <small>RERA Reg: P99000045490 · P99000045499 · P99000045599<br/>
+            MahaRERA: P51800005983</small>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Sunteck Beach Residences. All rights reserved. *Prices subject to change without prior notice. T&C Apply. This is a marketing communication and not a legal offer.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════ FLOATING ICONS ═══════════════════════════════ -->
+  <div class="floating-ctas">
+    <a href="https://wa.me/918080808667?text=Hi%2C%20I%27m%20interested%20in%20Sunteck%20Beach%20Residences.%20Please%20share%20more%20details." class="float-btn whatsapp" target="_blank" title="WhatsApp Us">
+      <i class="bi bi-whatsapp"></i>
+      <span class="float-tooltip">Chat on WhatsApp</span>
+    </a>
+    <a href="tel:+918080808667" class="float-btn call" title="Call Us">
+      <i class="bi bi-telephone-fill"></i>
+      <span class="float-tooltip">Call Now</span>
+    </a>
+  </div>
+
+  <!-- ═══════════════════════════════ ENQUIRY MODAL ═══════════════════════════════ -->
+  <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content enquire-modal">
+        <div class="modal-body p-0">
+          <div class="row g-0">
+            <!-- Left Image Panel -->
+            <div class="col-md-5 d-none d-md-block">
+              <div class="modal-img-panel">
+                <img src="assets/Family-on-the-beach.webp" alt="SBR Tower" class="img-fluid h-100 w-100" style="object-fit:cover;"/>
+                <div class="modal-img-overlay">
+                  <div class="modal-brand">
+                    <span class="brand-top text-white">SUNTECK</span>
+                    <span class="brand-bottom text-gold">BEACH RESIDENCES</span>
+                  </div>
+                  <div class="modal-img-tagline">Your Dream Beachfront<br/>Home Awaits You</div>
+                  <div class="modal-img-price">From <strong>₹1.50 Cr*</strong></div>
+                </div>
+              </div>
+            </div>
+            <!-- Right Form Panel -->
+            <div class="col-md-7">
+              <div class="modal-form-panel">
+                <button type="button" class="btn-close-modal" data-bs-dismiss="modal">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+                <h4 class="modal-form-title">Get Exclusive Details</h4>
+                <p class="modal-form-sub">Our expert will call you within 30 minutes</p>
+                <form id="enquiryForm" novalidate>
+                  <div class="mb-3">
+                    <label class="form-label">Full Name <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                      <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required/>
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Mobile Number <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                      <input type="tel" class="form-control" id="mobile" placeholder="+91 00000 00000" pattern="[0-9]{10}" required/>
+                      <div class="invalid-feedback">Please enter a valid 10-digit mobile number.</div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">City <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
+                      <input type="text" class="form-control" id="city" placeholder="Enter your city" required/>
+                      <div class="invalid-feedback">Please enter your city.</div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Interested In <span class="text-danger">*</span></label>
+                    <select class="form-select" id="interested" required>
+                      <option value="" disabled selected>Select apartment type</option>
+                      <option>3 BHK – 908 sq.ft (₹1.50 Cr*)</option>
+                      <option>3 BHK – 1103 sq.ft (₹1.72 Cr*)</option>
+                      <option>Both — Need Guidance</option>
+                      <option>Investment / Rental</option>
+                    </select>
+                    <div class="invalid-feedback">Please select an option.</div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label">Message (Optional)</label>
+                    <textarea class="form-control" id="message" rows="2" placeholder="Any specific queries or requirements..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-hero-primary w-100 py-3" id="submitBtn">
+                    <span class="btn-text"><i class="bi bi-send-fill me-2"></i>Request Callback Now</span>
+                    <span class="btn-loading d-none"><span class="spinner-border spinner-border-sm me-2"></span>Sending...</span>
+                  </button>
+                  <p class="form-disclaimer mt-3">
+                    <i class="bi bi-lock-fill me-1"></i>Your information is 100% secure & confidential. By submitting you agree to be contacted by our sales team.
+                  </p>
+                </form>
+                <!-- Success Message -->
+                <div id="formSuccess" class="form-success d-none">
+                  <div class="success-icon"><i class="bi bi-check-circle-fill"></i></div>
+                  <h5>Thank You! 🎉</h5>
+                  <p>Our expert will contact you within <strong>30 minutes</strong>. Get ready to own your dream beachfront home!</p>
+                  <button class="btn btn-primary-gold mt-2" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
